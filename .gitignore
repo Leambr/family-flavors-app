@@ -1,0 +1,10 @@
+###> generic ###
+.idea/
+###< generic ###
+
+###> npm ###
+node_modules/
+###< npm ###
+
+public
+.env
