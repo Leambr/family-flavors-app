@@ -1,0 +1,15 @@
+.image {
+    display: block;
+    width: 142px;
+    height: 184px;
+    border-radius: 4px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.cardWrapper {
+    border-radius: 4px;
+    background-color: red;
+    display: inline-block;
+    max-width: 100%;
+}
