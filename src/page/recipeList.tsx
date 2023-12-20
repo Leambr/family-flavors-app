@@ -1,0 +1,16 @@
+import React from 'react';
+import { RecipeCard } from '../components/RecipeCard/RecipeCard';
+import s from './recipeList.module.css';
+import { Carousel } from '../components/Carousel/Carousel';
+
+export const RecipeList = () => {
+    return (
+        <>
+            <h2 className={s.title}>A base de pâtes</h2>
+            {/* voir plus button */}
+            {/* <RecipeCard imageUrl={} /> */}
+            <p>RecipeList</p>
+            <Carousel />
+        </>
+    );
+};

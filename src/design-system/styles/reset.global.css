@@ -35,8 +35,9 @@ h1 {
 }
 
 h2 {
-    font-family: var(--font-family-default);
-    font-weight: var(--font-weight-semi-bold);
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-title);
     font-size: var(--font-size-m);
     margin: 0;
 }

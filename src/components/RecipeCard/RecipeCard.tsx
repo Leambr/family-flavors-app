@@ -1,12 +1,15 @@
 import React from 'react';
 import { Card } from '../Card/Card';
-import pasta from '../../../public/pasta.jpg';
 import s from './RecipeCard.module.css';
 
-export const RecipeCard = () => {
+interface RecipeCardProps {
+    imageUrl: string;
+}
+
+export const RecipeCard = ({ imageUrl }: RecipeCardProps) => {
     return (
         <Card className={s.cardWrapper}>
-            <img src={pasta} className={s.image} alt="Pasta Recipe" />
+            <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
         </Card>
     );
 };

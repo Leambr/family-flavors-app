@@ -1,0 +1,15 @@
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+}
+.innerCarousel {
+    display: flex;
+}
+
+.image {
+    min-width: 142px;
+}
+
+.image:not(:last-child) {
+    padding-right: 10px;
+}
