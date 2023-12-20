@@ -6,10 +6,12 @@ import { RecipeCard } from '../RecipeCard/RecipeCard';
 
 export const Carousel = () => {
     const [width, setWidth] = useState(0);
-    const carousel = useRef();
+    const carousel = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
-        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        if (carousel.current) {
+            setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+        }
     }, []);
 
     return (
