@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import s from './Carousel.module.css';
-import images from '../../fixtures/images';
 import { motion } from 'framer-motion';
+import React, { useEffect, useRef, useState } from 'react';
+import images from '../../fixtures/images';
 import { RecipeCard } from '../RecipeCard/RecipeCard';
+import s from './Carousel.module.css';
 
 export const Carousel = () => {
     const [width, setWidth] = useState(0);
@@ -10,7 +10,9 @@ export const Carousel = () => {
 
     useEffect(() => {
         if (carousel.current) {
-            setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+            const widthWithMargin =
+                40 + (carousel.current.scrollWidth - carousel.current.offsetWidth);
+            setWidth(widthWithMargin);
         }
     }, []);
 
