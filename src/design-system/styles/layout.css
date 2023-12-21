@@ -1,5 +1,6 @@
 :root {
-    --grid-gutter-x: 16px;
+    --grid-gutter-x-desktop: 16px;
+    --grid-gutter-x-mobile: 5px;
 }
 
 .layout-with-centered-content {
@@ -7,13 +8,13 @@
     grid-template-columns: auto 100% auto;
     grid-template-rows: auto;
     grid-template-areas: 'left main right';
-    margin: 0 64px 0 64px;
+    margin: 0 15px 0 15px;
 }
 
 .main-container {
     position: relative;
-    padding-right: var(--grid-gutter-x);
-    padding-left: var(--grid-gutter-x);
+    padding-right: var(--grid-gutter-x-mobile);
+    padding-left: var(--grid-gutter-x-mobile);
 }
 
 .main-container {
@@ -26,4 +27,15 @@
 
 .mb-72 {
     margin-bottom: var(--space-72);
+}
+
+@media screen and (min-width: 720px) {
+    .layout-with-centered-content {
+        margin: 0 64px 0 64px;
+    }
+
+    .main-container {
+        padding-right: var(--grid-gutter-x-desktop);
+        padding-left: var(--grid-gutter-x-desktop);
+    }
 }

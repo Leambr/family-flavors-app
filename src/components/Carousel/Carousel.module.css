@@ -13,3 +13,13 @@
 .image:not(:last-child) {
     padding-right: 10px;
 }
+
+@media screen and (min-width: 720px) {
+    .image {
+        min-width: 406px;
+    }
+
+    .image:not(:last-child) {
+        padding-right: 32px;
+    }
+}

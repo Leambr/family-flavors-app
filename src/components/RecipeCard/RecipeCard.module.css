@@ -13,3 +13,10 @@
     max-width: 100%;
     object-fit: cover;
 }
+
+@media screen and (min-width: 720px) {
+    .image {
+        width: 406px;
+        height: 336px;
+    }
+}
