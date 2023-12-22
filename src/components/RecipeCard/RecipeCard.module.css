@@ -1,6 +1,5 @@
 .cardWrapper {
     border-radius: 4px;
-    background-color: red; /* à supprimer après validation de la carte */
     display: inline-block;
     max-width: 100%;
 }

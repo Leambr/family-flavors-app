@@ -6,11 +6,11 @@ import pasta from '../assets/pasta.jpg';
 
 export const RecipeList = () => {
     return (
-        <>
+        <section>
             <h2 className={s.title}>A base de pâtes</h2>
             {/* voir plus button */}
 
             <Carousel />
-        </>
+        </section>
     );
 };

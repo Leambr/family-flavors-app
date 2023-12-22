@@ -1,7 +1,22 @@
 .carousel {
-    cursor: grab;
     overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
 }
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 .innerCarousel {
     display: flex;
 }
@@ -11,7 +26,7 @@
 }
 
 .image:not(:last-child) {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 @media screen and (min-width: 720px) {
@@ -20,6 +35,6 @@
     }
 
     .image:not(:last-child) {
-        padding-right: 32px;
+        margin-right: 32px;
     }
 }

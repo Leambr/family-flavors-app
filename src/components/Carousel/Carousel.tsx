@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import cx from 'classnames';
-import { motion } from 'framer-motion';
 import images from '../../fixtures/images';
 import { RecipeCard } from '../RecipeCard/RecipeCard';
 import s from './Carousel.module.css';
@@ -8,6 +6,20 @@ import s from './Carousel.module.css';
 export const Carousel = () => {
     const [width, setWidth] = useState(0);
     const carousel = useRef<HTMLDivElement | null>(null);
+
+    const visibleImages = images.slice(0, 6);
+
+    const handleNext = () => {
+        if (carousel.current) {
+            carousel.current.scrollLeft += width;
+        }
+    };
+
+    const handlePrev = () => {
+        if (carousel.current) {
+            carousel.current.scrollLeft -= width;
+        }
+    };
 
     useEffect(() => {
         if (carousel.current) {
@@ -17,18 +29,18 @@ export const Carousel = () => {
     }, []);
 
     return (
-        <motion.div ref={carousel} className={s.carousel}>
-            <motion.div
-                drag="x"
-                dragConstraints={{ right: 0, left: -width }}
-                className={s.innerCarousel}
-            >
-                {images.map((image) => (
-                    <motion.div className={s.image} key={image}>
-                        <RecipeCard imageUrl={image} />
-                    </motion.div>
-                ))}
-            </motion.div>
-        </motion.div>
+        <div>
+            <div className={s.carousel} ref={carousel}>
+                <div className={s.innerCarousel}>
+                    {visibleImages.map((image) => (
+                        <div className={s.image} key={image}>
+                            <RecipeCard imageUrl={image} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <button onClick={handlePrev}>Left</button>
+            <button onClick={handleNext}>Right</button>
+        </div>
     );
 };
