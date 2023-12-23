@@ -7,19 +7,9 @@ export const Carousel = () => {
     const [width, setWidth] = useState(0);
     const carousel = useRef<HTMLDivElement | null>(null);
 
-    const visibleImages = images.slice(0, 6);
+    const maxImage = 6;
 
-    const handleNext = () => {
-        if (carousel.current) {
-            carousel.current.scrollLeft += width;
-        }
-    };
-
-    const handlePrev = () => {
-        if (carousel.current) {
-            carousel.current.scrollLeft -= width;
-        }
-    };
+    const visibleImages = images.slice(0, maxImage);
 
     useEffect(() => {
         if (carousel.current) {
@@ -39,8 +29,6 @@ export const Carousel = () => {
                     ))}
                 </div>
             </div>
-            <button onClick={handlePrev}>Left</button>
-            <button onClick={handleNext}>Right</button>
         </div>
     );
 };

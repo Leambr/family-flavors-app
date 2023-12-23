@@ -29,6 +29,10 @@
     margin-bottom: var(--space-72);
 }
 
+.mb-104 {
+    margin-bottom: var(--space-104);
+}
+
 @media screen and (min-width: 720px) {
     .layout-with-centered-content {
         margin: 0 64px 0 64px;
