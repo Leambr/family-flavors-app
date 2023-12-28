@@ -24,7 +24,14 @@ export const Carousel = () => {
                 <div className={s.innerCarousel}>
                     {visibleImages.map((image) => (
                         <div className={s.image} key={image}>
-                            <RecipeCard imageUrl={image} />
+                            <RecipeCard
+                                imageUrl={image}
+                                recipeName={'Pâtes à la carbonara'}
+                                description={
+                                    'Delicious and flavorful recipe that will satisfy your taste buds. Yes my friend a good deal'
+                                }
+                                dietType={'Végétarien'}
+                            />
                         </div>
                     ))}
                 </div>

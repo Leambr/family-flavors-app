@@ -1,7 +1,13 @@
 .cardWrapper {
+    position: relative;
     border-radius: 4px;
     display: inline-block;
     max-width: 100%;
+    cursor: pointer;
+}
+
+.imageWrapper {
+    position: relative;
 }
 
 .image {
@@ -11,6 +17,26 @@
     border-radius: 4px;
     max-width: 100%;
     object-fit: cover;
+}
+
+.nameAndDescription {
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--space-12);
+    text-wrap: wrap;
+}
+
+.dietType {
+    font-size: 14px;
+    font-weight: 600;
+    color: #87877b;
+    padding-bottom: var(--space-8);
+}
+
+.recipeName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--space-12);
 }
 
 @media screen and (min-width: 720px) {

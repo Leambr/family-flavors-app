@@ -33,7 +33,7 @@
 
 @media (min-width: 768px) {
     :root {
-        --font-size-xl: 4.6rem;
+        --font-size-xl: 4rem;
         --line-height-xl: 5.6rem;
     }
 }
