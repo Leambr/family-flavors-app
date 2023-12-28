@@ -29,6 +29,7 @@
     --line-height-xl: 4.4rem;
 
     --letter-spacing-title: 0.1rem;
+    --letter-spacing-title-xl: 0.25rem;
 }
 
 @media (min-width: 768px) {

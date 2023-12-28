@@ -61,5 +61,6 @@ p {
 @media screen and (min-width: 720px) {
     h2 {
         font-size: var(--font-size-xl);
+        letter-spacing: var(--letter-spacing-title-xl);
     }
 }
