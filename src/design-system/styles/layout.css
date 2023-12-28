@@ -25,14 +25,6 @@
     margin-bottom: var(--space-40);
 }
 
-.mb-72 {
-    margin-bottom: var(--space-72);
-}
-
-.mb-104 {
-    margin-bottom: var(--space-104);
-}
-
 @media screen and (min-width: 720px) {
     .layout-with-centered-content {
         margin: 0 64px 0 64px;
@@ -41,5 +33,16 @@
     .main-container {
         padding-right: var(--grid-gutter-x-desktop);
         padding-left: var(--grid-gutter-x-desktop);
+    }
+
+    .mb-72 {
+        margin-bottom: var(--space-72);
+    }
+}
+
+/* Large-sized devices (min-width: 1000px) */
+@media (min-width: 1200px) {
+    .mb-104 {
+        margin-bottom: var(--space-104);
     }
 }
