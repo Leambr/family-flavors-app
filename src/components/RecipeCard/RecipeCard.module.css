@@ -23,7 +23,6 @@
     color: var(--color-white);
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
-    text-wrap: wrap;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,6 +34,11 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.72%, rgba(0, 0, 0, 1) 100%);
     padding: var(--space-12);
     border-radius: 4px;
+}
+
+.recipeName {
+    white-space: normal;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 720px) {
