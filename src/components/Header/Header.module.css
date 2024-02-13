@@ -1,11 +1,16 @@
-.headerGrid {
+.headerLayout {
     display: flex;
     flex-direction: row;
     gap: var(--space-32);
+}
+
+.mainRecipe {
+    flex: 1;
 }
 
 .recipeColumn {
     display: flex;
     flex-direction: column;
     gap: var(--space-24);
+    flex: 1;
 }

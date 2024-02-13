@@ -31,8 +31,8 @@ export const Header = () => {
             {isScreenSmall ? (
                 <Carousel isHeaderCarousel={true} />
             ) : (
-                <div className={s.headerGrid}>
-                    <div>
+                <div className={s.headerLayout}>
+                    <div className={s.mainRecipe}>
                         <RecipeCard
                             recipeName={'Pâtes'}
                             description={

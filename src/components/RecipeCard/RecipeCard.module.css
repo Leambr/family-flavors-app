@@ -1,14 +1,14 @@
 .cardWrapper {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     border-radius: 4px;
-    display: inline-block;
-    max-width: 100%;
     cursor: pointer;
 }
 
 .imageWrapper {
     position: relative;
     margin-bottom: var(--space-12);
+    flex-grow: 1;
 }
 
 .image,
@@ -78,7 +78,8 @@
     }
 
     .bigImage {
-        width: 624px;
-        height: 344px;
+        width: 100%;
+        height: auto;
+        max-height: 344px;
     }
 }
