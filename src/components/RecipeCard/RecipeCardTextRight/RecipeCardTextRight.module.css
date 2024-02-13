@@ -1,0 +1,24 @@
+.cardWrapper {
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    max-width: 100%;
+    cursor: pointer;
+    gap: var(--space-12);
+}
+
+.imageWrapper {
+    position: relative;
+}
+
+.image {
+    display: block;
+    border-radius: 4px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.image {
+    width: 187px;
+    height: 160px;
+}

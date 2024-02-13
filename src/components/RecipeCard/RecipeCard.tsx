@@ -2,15 +2,16 @@ import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
 import { Card } from '../Card/Card';
 import s from './RecipeCard.module.css';
+import { RecipeCardProps } from '../../domain/recipeCard/recipeCard';
+import { RecipeCardDescription } from './RecipeCardDescription/RecipeCardDescription';
 
-interface RecipeCardProps {
-    imageUrl: string;
-    recipeName: string;
-    description: string;
-    dietType: string;
-}
-
-export const RecipeCard = ({ imageUrl, recipeName, description, dietType }: RecipeCardProps) => {
+export const RecipeCard = ({
+    imageUrl,
+    recipeName,
+    description,
+    dietType,
+    isHeaderCarousel,
+}: RecipeCardProps) => {
     const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
     const isScreenSmall = screenSize < 720;
 
@@ -29,7 +30,11 @@ export const RecipeCard = ({ imageUrl, recipeName, description, dietType }: Reci
     return (
         <Card className={s.cardWrapper}>
             <div className={s.imageWrapper}>
-                <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
+                <img
+                    src={imageUrl}
+                    className={isHeaderCarousel ? s.bigImage : s.image}
+                    alt="Pasta Recipe"
+                />
                 {isScreenSmall && (
                     <div className={s.nameOverlay}>
                         <p className={s.recipeName}>{recipeName}</p>
@@ -37,11 +42,11 @@ export const RecipeCard = ({ imageUrl, recipeName, description, dietType }: Reci
                 )}
             </div>
             {!isScreenSmall && (
-                <div className={s.nameAndDescription}>
-                    <p className={s.dietType}>{dietType}</p>
-                    <p className={s.recipeName}>{recipeName}</p>
-                    <p>{description}</p>
-                </div>
+                <RecipeCardDescription
+                    recipeName={recipeName}
+                    description={description}
+                    dietType={dietType}
+                />
             )}
         </Card>
     );

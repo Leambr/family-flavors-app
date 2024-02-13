@@ -1,0 +1,18 @@
+.nameAndDescription {
+    display: flex;
+    flex-direction: column;
+    text-wrap: wrap;
+}
+
+.dietType {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semi-bold);
+    color: #87877b;
+    padding-bottom: var(--space-8);
+}
+
+.recipeName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--space-12);
+}

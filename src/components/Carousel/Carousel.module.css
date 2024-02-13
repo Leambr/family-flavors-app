@@ -21,11 +21,18 @@
     display: flex;
 }
 
+/* To make sure image is not smaller than */
 .image {
     min-width: 142px;
 }
 
-.image:not(:last-child) {
+/* To make sure image is not smaller than */
+.bigImage {
+    min-width: 218px;
+}
+
+.image:not(:last-child),
+.bigImage:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -35,6 +42,6 @@
     }
 
     .image:not(:last-child) {
-        margin-right: 32px;
+        margin-right: var(--space-32);
     }
 }
