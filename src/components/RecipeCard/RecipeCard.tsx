@@ -25,7 +25,7 @@ export const RecipeCard = ({
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []); //
+    }, []);
 
     return (
         <Card className={s.cardWrapper}>

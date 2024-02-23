@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 720px) {
     .image {
-        min-width: 406px;
+        min-width: 350px;
     }
 
     .image:not(:last-child) {
