@@ -38,7 +38,7 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                         },
                     },
                     300: {
-                        slidesPerView: 2,
+                        slidesPerView: isHeaderCarousel ? 1 : 2,
                         spaceBetween: 10,
                         navigation: {
                             enabled: false,
