@@ -24,8 +24,6 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                         spaceBetween: 60,
                         navigation: {
                             enabled: true,
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
                         },
                     },
                     720: {
@@ -33,12 +31,19 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                         spaceBetween: 40,
                         navigation: {
                             enabled: false,
+                        },
+                    },
+                    300: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                        navigation: {
+                            enabled: false,
                             nextEl: '',
                             prevEl: '',
                         },
                     },
                 }}
-                // navigation={true}
+                navigation={true}
                 effect="coverflow"
                 coverflowEffect={{
                     rotate: 10,
@@ -50,7 +55,6 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                 loop={true}
                 centeredSlides={true}
                 centeredSlidesBounds={true}
-                margin={20}
                 grabCursor={true}
             >
                 {visibleImages.map((image) => (
