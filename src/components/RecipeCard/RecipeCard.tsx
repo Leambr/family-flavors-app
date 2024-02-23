@@ -16,6 +16,19 @@ export const RecipeCard = ({
     const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
     const isScreenSmall = screenSize < 720;
 
+    const renderRecipeCardDescription = () => {
+        if (!isScreenSmall && (isActive || isHeaderCarousel)) {
+            return (
+                <RecipeCardDescription
+                    recipeName={recipeName}
+                    description={description}
+                    dietType={dietType}
+                />
+            );
+        }
+        return null;
+    };
+
     useEffect(() => {
         const handleResize = () => {
             setScreenSize(window.innerWidth);
@@ -42,13 +55,7 @@ export const RecipeCard = ({
                     </div>
                 )}
             </div>
-            {!isScreenSmall && isActive && (
-                <RecipeCardDescription
-                    recipeName={recipeName}
-                    description={description}
-                    dietType={dietType}
-                />
-            )}
+            {renderRecipeCardDescription()}
         </Card>
     );
 };
