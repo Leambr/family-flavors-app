@@ -1,9 +1,11 @@
 .title {
     margin-bottom: var(--space-16);
+    font-weight: 600;
 }
 
 @media screen and (min-width: 720px) {
     .title {
-        margin-bottom: var(--space-32);
+        margin-bottom: var(--space-48);
+        font-weight: 500;
     }
 }
