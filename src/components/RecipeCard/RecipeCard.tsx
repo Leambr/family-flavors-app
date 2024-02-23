@@ -11,6 +11,7 @@ export const RecipeCard = ({
     description,
     dietType,
     isHeaderCarousel,
+    isActive,
 }: RecipeCardProps) => {
     const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
     const isScreenSmall = screenSize < 720;
@@ -41,7 +42,7 @@ export const RecipeCard = ({
                     </div>
                 )}
             </div>
-            {!isScreenSmall && (
+            {!isScreenSmall && isActive && (
                 <RecipeCardDescription
                     recipeName={recipeName}
                     description={description}

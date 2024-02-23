@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import images from '../../fixtures/images';
 import { RecipeCard } from '../RecipeCard/RecipeCard';
-import s from './Carousel.module.css';
 import { Swiper, SwiperSlide } from '../Swiper/Swiper';
 
 interface CarouselProps {
@@ -9,8 +8,13 @@ interface CarouselProps {
 }
 
 export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
+    const [activeIndex, setActiveIndex] = useState(0);
     const maxImage = 6;
     const visibleImages = images.slice(0, maxImage);
+
+    const handleSlideChange = (swiper: any) => {
+        setActiveIndex(swiper.realIndex);
+    };
 
     return (
         <>
@@ -56,9 +60,12 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                 centeredSlides={true}
                 centeredSlidesBounds={true}
                 grabCursor={true}
+                on={{
+                    slideChange: handleSlideChange, // Écouter l'événement slideChange
+                }}
             >
-                {visibleImages.map((image) => (
-                    <SwiperSlide>
+                {visibleImages.map((image, index) => (
+                    <SwiperSlide key={index}>
                         <RecipeCard
                             imageUrl={image}
                             recipeName={'Pâtes à la carbonara'}
@@ -67,6 +74,7 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                             }
                             dietType={'Végétarien'}
                             isHeaderCarousel={isHeaderCarousel}
+                            isActive={index === activeIndex}
                         />
                     </SwiperSlide>
                 ))}
