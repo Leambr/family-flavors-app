@@ -6,7 +6,7 @@ import cx from 'classnames';
 export const Homepage = () => {
     return (
         <>
-            <section className={cx('mb-40 mb-72 mb-104', s.landingContainer)}>
+            <section className={s.landingContainer}>
                 <div className={s.landingTitleContainer}>
                     <h1 className={s.title}>Family Flavors</h1>
                     <div className={s.subtitleContainer}>
