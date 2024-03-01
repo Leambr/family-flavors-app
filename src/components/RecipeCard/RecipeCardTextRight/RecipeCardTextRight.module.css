@@ -7,6 +7,15 @@
     gap: var(--space-12);
 }
 
+.cardWrapper:hover .cardDescription {
+    padding-left: var(--space-8);
+    transition: ease-in-out 0.2s;
+}
+
+.cardDescription {
+    transition: ease-in-out 0.2s;
+}
+
 .imageWrapper {
     position: relative;
 }

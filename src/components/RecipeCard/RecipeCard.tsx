@@ -55,7 +55,7 @@ export const RecipeCard = ({
                     </div>
                 )}
             </div>
-            {renderRecipeCardDescription()}
+            <div className={s.cardDescription}>{renderRecipeCardDescription()}</div>
         </Card>
     );
 };

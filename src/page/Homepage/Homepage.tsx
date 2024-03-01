@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Homepage.module.css';
 import { RecipeList } from '../RecipeList/RecipeList';
-import cx from 'classnames';
 
 export const Homepage = () => {
     return (

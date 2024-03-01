@@ -15,7 +15,7 @@ export const RecipeCardTextRight = ({
             <div className={s.imageWrapper}>
                 <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
             </div>
-            <div>
+            <div className={s.cardDescription}>
                 <RecipeCardDescription
                     recipeName={recipeName}
                     description={description}
