@@ -1,7 +1,7 @@
 .cardWrapper {
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     cursor: pointer;
     transition: ease-in-out 0.2s;
 }
@@ -17,19 +17,19 @@
 }
 
 .cardDescription {
+    margin-top: var(--space-12);
     transition: ease-in-out 0.2s;
 }
 
 .imageWrapper {
     position: relative;
-    margin-bottom: var(--space-12);
     flex-grow: 1;
 }
 
 .image,
 .bigImage {
     display: block;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     max-width: 100%;
     object-fit: cover;
 }
@@ -58,7 +58,7 @@
     justify-content: flex-end;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50.72%, rgba(0, 0, 0, 1) 100%);
     padding: var(--space-12);
-    border-radius: 4px;
+    /* border-radius: 4px; */
 }
 
 .recipeName {

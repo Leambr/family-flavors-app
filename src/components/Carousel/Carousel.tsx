@@ -75,6 +75,7 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                             dietType={'Végétarien'}
                             isHeaderCarousel={isHeaderCarousel}
                             isActive={index === activeIndex}
+                            isDescription={true}
                         />
                     </SwiperSlide>
                 ))}

@@ -41,10 +41,24 @@ export const Header = () => {
                             dietType={'Végétarien'}
                             imageUrl={pancakes}
                             isHeaderCarousel={true}
+                            isDescription={false}
                         />
                     </div>
                     <div className={s.recipeColumn}>
-                        {visibleImages.map((image, index) => (
+                        <div className={s.test}>
+                            <h2>On adore cette saison</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+                                aperiam nihil atque, cupiditate expedita minus repellendus laborum
+                                amet magnam est et labore a modi harum pariatur esse excepturi fugit
+                                alias iusto. Unde repellendus culpa voluptatibus velit totam ab
+                                cupiditate ea tenetur suscipit quidem tempore, minima quibusdam ut?
+                                Excepturi, officia cumque.
+                            </p>
+                            <button>Voir la recette</button>
+                        </div>
+
+                        {/* {visibleImages.map((image, index) => (
                             <div key={index}>
                                 <RecipeCardTextRight
                                     imageUrl={image}
@@ -55,7 +69,7 @@ export const Header = () => {
                                     dietType={'Végétarien'}
                                 />
                             </div>
-                        ))}
+                        ))} */}
                     </div>
                 </div>
             )}

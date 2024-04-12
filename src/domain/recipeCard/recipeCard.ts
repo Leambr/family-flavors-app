@@ -2,7 +2,8 @@ export interface RecipeCardProps {
     recipeName: string;
     description: string;
     dietType: string;
-    imageUrl?: string;
     isHeaderCarousel?: boolean;
+    imageUrl?: string;
     isActive?: boolean;
+    isDescription?: boolean;
 }

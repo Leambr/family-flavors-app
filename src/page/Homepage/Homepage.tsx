@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Homepage.module.css';
 import { RecipeList } from '../RecipeList/RecipeList';
+import { Cartouche } from '../../components/Cartouche/Cartouche';
 
 export const Homepage = () => {
     return (
