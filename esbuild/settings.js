@@ -11,6 +11,7 @@ export function createBuildSettings(options) {
             '.svg': 'file',
             '.png': 'file',
             '.ttf': 'file',
+            '.jpg': 'file',
         },
         ...options,
     };

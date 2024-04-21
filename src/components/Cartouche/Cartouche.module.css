@@ -1,0 +1,10 @@
+.cardWrapper {
+    background-color: var(--color-dark-green);
+    margin-bottom: 30px;
+}
+
+.cartoucheImage {
+    opacity: 0.6;
+    width: 100%;
+    /* border-radius: 4px; */
+}
