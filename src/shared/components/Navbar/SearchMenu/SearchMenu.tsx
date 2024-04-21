@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
 import cx from 'classnames';
+import React, { useState } from 'react';
+
 import s from './SearchMenu.module.css';
 
 export const SearchMenu = () => {

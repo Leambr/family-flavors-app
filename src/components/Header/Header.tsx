@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import images from '../../fixtures/images';
+
 import pancakes from '../../assets/pancakes.jpg';
-import { RecipeCardTextRight } from '../RecipeCard/RecipeCardTextRight/RecipeCardTextRight';
-import s from './Header.module.css';
-import { RecipeCard } from '../RecipeCard/RecipeCard';
+import images from '../../fixtures/images';
 import { Carousel } from '../Carousel/Carousel';
+import { RecipeCard } from '../RecipeCard/RecipeCard';
+import { RecipeCardTextRight } from '../RecipeCard/RecipeCardTextRight/RecipeCardTextRight';
+
+import s from './Header.module.css';
+
 
 export const Header = () => {
     const maxImage = 3;

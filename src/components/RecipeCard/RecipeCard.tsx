@@ -1,9 +1,11 @@
 import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
-import { Card } from '../Card/Card';
-import s from './RecipeCard.module.css';
+
 import { RecipeCardProps } from '../../domain/recipeCard/recipeCard';
-import { RecipeCardDescription } from './RecipeCardDescription/RecipeCardDescription';
+import { Card } from '../../shared/components/Card/Card';
+
+import s from './RecipeCard.module.css';
+import { RecipeCardDescription } from '../../page/Homepage/shared/components/RecipeCardDescription/RecipeCardDescription';
 
 export const RecipeCard = ({
     imageUrl,
@@ -27,6 +29,7 @@ export const RecipeCard = ({
                 />
             );
         }
+
         return null;
     };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { IconProps } from './iconTypes';
 
 export const Logo = ({ color, ...props }: IconProps): JSX.Element => (

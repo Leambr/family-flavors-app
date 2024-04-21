@@ -1,7 +1,9 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom/client';
-import { routes } from './core/routing/routes';
+
 import { RouterProvider } from 'react-router-dom';
+
+import { routes } from './core/routing/routes';
 
 import './design-system/styles/variables/typography.css';
 import './design-system/styles/variables/colors.css';

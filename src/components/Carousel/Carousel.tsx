@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+
 import images from '../../fixtures/images';
 import { RecipeCard } from '../RecipeCard/RecipeCard';
 import { Swiper, SwiperSlide } from '../Swiper/Swiper';

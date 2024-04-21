@@ -1,7 +1,9 @@
 import React from 'react';
+
 import { RecipeCardProps } from '../../../domain/recipeCard/recipeCard';
-import { Card } from '../../Card/Card';
-import { RecipeCardDescription } from '../RecipeCardDescription/RecipeCardDescription';
+import { Card } from '../../../shared/components/Card/Card';
+import { RecipeCardDescription } from '../../../page/Homepage/shared/components/RecipeCardDescription/RecipeCardDescription';
+
 import s from './RecipeCardTextRight.module.css';
 
 export const RecipeCardTextRight = ({

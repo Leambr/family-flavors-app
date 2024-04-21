@@ -1,6 +1,10 @@
 import React from 'react';
+
+import pancakes from '../../assets/pancakes.jpg';
 import { ScrolldownDots } from '../../design-system/icons/ScrollDownDots';
+
 import s from './Homepage.module.css';
+import { MainRecipeCard } from './MainRecipeCard/MainRecipeCard';
 
 export const Homepage = () => {
     return (
@@ -20,6 +24,19 @@ export const Homepage = () => {
                         <ScrolldownDots color={'var(--color-dark-blue)'} />
                     </div>
                 </div>
+            </section>
+
+            <section className="mb-40 mb-72 mb-104">
+                <h3>Nos recettes à base de riz</h3>
+                <MainRecipeCard
+                    recipeName={'Tiramisu'}
+                    description={
+                        'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
+                    }
+                    dietType={'Végétarien'}
+                    imageUrl={pancakes}
+                    backgroundColor={'var( --color-beige)'}
+                />
             </section>
         </>
     );

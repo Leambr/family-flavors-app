@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import cx from 'classnames';
-import { Search } from '../../design-system/icons/Search';
-import { Logo } from '../../design-system/icons/Logo';
-import { BurgerMenu } from '../../design-system/icons/BurgerMenu';
+
+import { BurgerMenu } from '../../../design-system/icons/BurgerMenu';
+import { Logo } from '../../../design-system/icons/Logo';
+import { Search } from '../../../design-system/icons/Search';
 
 import s from './Navbar.module.css';
 
