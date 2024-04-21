@@ -6,7 +6,8 @@
     "type": "module",
     "scripts": {
         "build": "node ./esbuild/build.js",
-        "start": "node ./esbuild/serve.js"
+        "start": "node ./esbuild/serve.js",
+        "lint": "eslint src --ext .ts,.tsx --fix"
     },
     "keywords": [],
     "author": "",
@@ -22,9 +23,22 @@
         "swiper": "^11.0.6"
     },
     "devDependencies": {
+        "@eslint/eslintrc": "^3.0.2",
+        "@eslint/js": "^9.1.1",
         "@types/react": "^18.2.42",
         "@types/react-dom": "^18.2.17",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
         "esbuild": "0.19.8",
-        "typescript": "^5.3.3"
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-config-standard-with-typescript": "^43.0.1",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-n": "^16.6.2",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-promise": "^6.1.1",
+        "eslint-plugin-react": "^7.34.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "globals": "^15.0.0",
+        "typescript": "^5.4.5"
     }
 }
