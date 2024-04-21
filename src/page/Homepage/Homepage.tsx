@@ -1,7 +1,6 @@
 import React from 'react';
+import { ScrolldownDots } from '../../design-system/icons/ScrollDownDots';
 import s from './Homepage.module.css';
-import { RecipeList } from '../RecipeList/RecipeList';
-import { Cartouche } from '../../components/Cartouche/Cartouche';
 
 export const Homepage = () => {
     return (
@@ -15,8 +14,13 @@ export const Homepage = () => {
                         <p className={s.subtitle}>Nos recettes de famille dans votre assiette </p>
                     </div>
                 </div>
+                <div className={s.scrollDown}>
+                    <p>Découvrir</p>
+                    <div>
+                        <ScrolldownDots color={'var(--color-dark-blue)'} />
+                    </div>
+                </div>
             </section>
-            <RecipeList />
         </>
     );
 };

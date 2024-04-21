@@ -5,8 +5,8 @@
 
 :root {
     --font-family-revonza: Revonza;
-    --font-family-graphie: 'graphie', sans-serif;
-    --font-family-default: var(--font-family-graphie);
+    --font-family-expo: 'expo-serif-pro', serif;
+    --font-family-default: var(--font-family-expo);
     --font-family-title: var(--font-family-revonza);
 
     --font-weight-light: 300;
@@ -30,6 +30,7 @@
     --line-height-xl: 4.4rem;
 
     --letter-spacing-title: 0.1rem;
+    --letter-spacing-subtitle: 0.2rem;
     --letter-spacing-title-xl: 0.25rem;
 }
 
