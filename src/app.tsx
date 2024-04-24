@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 import { RouterProvider } from 'react-router-dom';
 
-import { routes } from './core/routing/routes';
+import { router } from './configurations/router';
 
 import './design-system/styles/variables/typography.css';
 import './design-system/styles/variables/colors.css';
@@ -11,4 +11,4 @@ import './design-system/styles/variables/spaces.css';
 import './design-system/styles/reset.global.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
-root.render(<RouterProvider router={routes} />);
+root.render(<RouterProvider router={router} />);

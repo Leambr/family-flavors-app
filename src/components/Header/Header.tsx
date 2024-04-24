@@ -2,12 +2,11 @@ import React, { useEffect, useState } from 'react';
 
 import pancakes from '../../assets/pancakes.jpg';
 import images from '../../fixtures/images';
-import { Carousel } from '../Carousel/Carousel';
+import { Carousel } from '../../shared/components/Carousel/Carousel';
 import { RecipeCard } from '../RecipeCard/RecipeCard';
 import { RecipeCardTextRight } from '../RecipeCard/RecipeCardTextRight/RecipeCardTextRight';
 
 import s from './Header.module.css';
-
 
 export const Header = () => {
     const maxImage = 3;
