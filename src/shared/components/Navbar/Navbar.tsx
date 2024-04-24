@@ -4,32 +4,39 @@ import { BurgerMenu } from '../../../design-system/icons/BurgerMenu';
 import { Logo } from '../../../design-system/icons/Logo';
 import { Search } from '../../../design-system/icons/Search';
 
+import cx from 'classnames';
+
 import s from './Navbar.module.css';
 
 export const Navbar = () => {
-    const [scrollY, setScrollY] = useState(0);
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleScroll = () => {
+        const currentScrollPosition = window.scrollY;
+
+        if (currentScrollPosition > 20) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    };
 
     useEffect(() => {
-        const handleScroll = () => {
-            setScrollY(window.scrollY);
-            if (window.scrollY > 100) {
-                setIsScrolled(true);
-            }
-            if (window.scrollY < 100) {
-                setIsScrolled(false);
-            }
-        };
-
         window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    });
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    });
 
     return (
-        <div className={isScrolled ? s.navbarContainer : s.navbarHidden}>
+        <div className={isVisible ? s.navbarContainer : cx(s.navbarContainer, s.navbarHidden)}>
             <div>
                 <Logo color="var(--color-light-blue)" />
             </div>
