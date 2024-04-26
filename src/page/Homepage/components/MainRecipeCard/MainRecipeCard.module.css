@@ -15,6 +15,7 @@
     position: relative;
     flex-grow: 1;
     background: #000;
+    border-radius: 4px;
 }
 
 .cardDescription {

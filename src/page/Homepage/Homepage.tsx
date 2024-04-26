@@ -74,7 +74,7 @@ export const Homepage = () => {
 
                 <section className="main-container mb-72 mb-104">
                     <h2>Nos recettes à base de riz</h2>
-                    <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
+                    <Carousel isHeaderCarousel={true} maxNumberOfCards={6}>
                         {images.map((image, index) => (
                             <BasicRecipeCard
                                 key={index}

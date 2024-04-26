@@ -4,4 +4,5 @@ export interface RecipeCardProps {
     dietType: string;
     imageUrl: string;
     backgroundColor?: string;
+    isLargeMobileCard?: boolean;
 }
