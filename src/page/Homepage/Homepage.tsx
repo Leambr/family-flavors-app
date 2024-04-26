@@ -5,8 +5,9 @@ import { ScrolldownDots } from '../../design-system/icons/ScrollDownDots';
 import images from '../../fixtures/images';
 import { Carousel } from '../../shared/components/Carousel/Carousel';
 
+import { BasicRecipeCard } from './components/BasicRecipeCard/BasicRecipeCard';
+import { MainRecipeCard } from './components/MainRecipeCard/MainRecipeCard';
 import s from './Homepage.module.css';
-import { MainRecipeCard } from './MainRecipeCard/MainRecipeCard';
 
 export const Homepage = () => {
     const colors = ['var(--color-beige)', 'var(--color-green-800)', 'var(--color-gray-300)'];
@@ -36,8 +37,8 @@ export const Homepage = () => {
                 </section>
 
                 <section className="main-container mb-40 mb-72 mb-104">
-                    <h2>Nos recettes à base de riz</h2>
-                    <Carousel isHeaderCarousel={true} maxNumberOfCards={8}>
+                    <h2>On adore cette saison</h2>
+                    <Carousel isHeaderCarousel={true} maxNumberOfCards={3}>
                         {images.map((image, index) => (
                             <MainRecipeCard
                                 key={index}
@@ -55,9 +56,45 @@ export const Homepage = () => {
 
                 <section className="main-container mb-40 mb-72 mb-104">
                     <h2>Tartes et quiches</h2>
-                    <Carousel isHeaderCarousel={true} maxNumberOfCards={8}>
+                    <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
                         {images.map((image, index) => (
-                            <MainRecipeCard
+                            <BasicRecipeCard
+                                key={index}
+                                recipeName={'Tiramisu'}
+                                description={
+                                    'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
+                                }
+                                dietType={'Végétarien'}
+                                imageUrl={image}
+                                backgroundColor={colors[index % colors.length]}
+                            />
+                        ))}
+                    </Carousel>
+                </section>
+
+                <section className="main-container mb-40 mb-72 mb-104">
+                    <h2>Nos recettes à base de riz</h2>
+                    <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
+                        {images.map((image, index) => (
+                            <BasicRecipeCard
+                                key={index}
+                                recipeName={'Tiramisu'}
+                                description={
+                                    'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
+                                }
+                                dietType={'Végétarien'}
+                                imageUrl={image}
+                                backgroundColor={colors[index % colors.length]}
+                            />
+                        ))}
+                    </Carousel>
+                </section>
+
+                <section className="main-container mb-40 mb-72 mb-104">
+                    <h2>Nos recettes à base de pâtes</h2>
+                    <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
+                        {images.map((image, index) => (
+                            <BasicRecipeCard
                                 key={index}
                                 recipeName={'Tiramisu'}
                                 description={

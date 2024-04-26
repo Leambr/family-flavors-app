@@ -1,10 +1,9 @@
+import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
 
 import { BurgerMenu } from '../../../design-system/icons/BurgerMenu';
 import { Logo } from '../../../design-system/icons/Logo';
 import { Search } from '../../../design-system/icons/Search';
-
-import cx from 'classnames';
 
 import s from './Navbar.module.css';
 

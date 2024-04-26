@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
-import { Swiper, SwiperSlide } from '../../../components/Swiper/Swiper';
 import { CarouselProps } from '../../../resources/carousel/domain/carousel';
+import { Swiper, SwiperSlide } from '../Swiper/Swiper';
 
 export const Carousel = ({
     children,
@@ -35,8 +35,8 @@ export const Carousel = ({
                         },
                     },
                     300: {
-                        slidesPerView: isHeaderCarousel ? 1.2 : 2,
-                        spaceBetween: 20,
+                        slidesPerView: isHeaderCarousel ? 1.2 : 2.2,
+                        spaceBetween: 10,
                         navigation: {
                             enabled: false,
                         },

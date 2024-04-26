@@ -3,5 +3,5 @@ export interface RecipeCardProps {
     description: string;
     dietType: string;
     imageUrl: string;
-    backgroundColor: string;
+    backgroundColor?: string;
 }

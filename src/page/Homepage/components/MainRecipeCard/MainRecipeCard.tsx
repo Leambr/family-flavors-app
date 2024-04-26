@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
-import { RecipeCardProps } from '../../../resources/recipe/domain/recipeCard';
-import { Card } from '../../../shared/components/Card/Card';
+import { RecipeCardProps } from '../../../../resources/recipe/domain/recipeCard';
+import { Card } from '../../../../shared/components/Card/Card';
 
 import s from './MainRecipeCard.module.css';
 
