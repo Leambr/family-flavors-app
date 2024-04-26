@@ -38,11 +38,11 @@ export const Navbar = () => {
     return (
         <div className={isVisible ? s.navbarContainer : cx(s.navbarContainer, s.navbarHidden)}>
             <div>
-                <Logo color="var(--color-light-blue)" />
+                <Logo color="var(--color-blue-100)" />
             </div>
             <div className={s.menuRight}>
-                <Search color="var(--color-light-blue)" />
-                <BurgerMenu color="var(--color-light-blue)" />
+                <Search color="var(--color-blue-100)" />
+                <BurgerMenu color="var(--color-blue-100)" />
             </div>
         </div>
     );

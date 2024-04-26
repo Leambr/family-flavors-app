@@ -3,7 +3,7 @@
     display: flex;
     top: 0px;
     height: 48px;
-    background: var(--color-dark-green);
+    background: var(--color-green-900);
     justify-content: space-between;
     align-items: baseline;
     padding: 14px 16px;

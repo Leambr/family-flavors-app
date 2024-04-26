@@ -9,8 +9,8 @@
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    background-color: var(var(--color-dark-green));
-    color: var(var(--color-light-blue));
+    background-color: var(var(--color-green-900));
+    color: var(var(--color-blue-100));
     z-index: 9999;
     transition: 0.3s all ease-in-out;
 }

@@ -14,18 +14,12 @@ export function Swiper(props: any) {
         const params = {
             ...rest,
             injectStyles: [
-                // `.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-                //     bottom: -45px
-                // }`,
-                // `.swiper-container {
-                //     width: 100%
-                // }`,
                 `.swiper-button-next, .swiper-button-prev {
-                    top: var(--swiper-navigation-top-offset,40%)
+                    top: var(--swiper-navigation-top-offset,50%)
                    
                 }`,
                 `.swiper-button-next, .swiper-button-prev {
-                    color: var(--color-dark-green)
+                    color: var(--color-green-900)
                    
                 }`,
                 `.swiper-button-next, .swiper-button-prev {
@@ -36,7 +30,7 @@ export function Swiper(props: any) {
 
                 }`,
                 `.swiper-button-next, .swiper-button-prev {
-                    background: var(--color-light-blue)
+                    background: var(--color-blue-100)
                 }`,
                 `.swiper-button-next, .swiper-button-prev {
                     border-radius: 50%

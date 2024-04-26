@@ -9,11 +9,7 @@ export const Layout = () => {
     return (
         <>
             <Navbar />
-            <div className="layout-with-centered-content">
-                <section className="main-container">
-                    <Outlet />
-                </section>
-            </div>
+            <Outlet />
         </>
     );
 };

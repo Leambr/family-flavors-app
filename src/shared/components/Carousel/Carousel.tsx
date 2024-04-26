@@ -16,7 +16,7 @@ export const Carousel = ({
     return (
         <>
             <Swiper
-                slidesPerView={1}
+                slidesPerView={1.5}
                 spaceBetween={10}
                 mousewheel={true}
                 breakpoints={{
@@ -28,22 +28,21 @@ export const Carousel = ({
                         },
                     },
                     720: {
-                        slidesPerView: 2,
+                        slidesPerView: 2.2,
                         spaceBetween: 22,
                         navigation: {
                             enabled: false,
                         },
                     },
                     300: {
-                        slidesPerView: isHeaderCarousel ? 1 : 2,
-                        spaceBetween: 10,
+                        slidesPerView: isHeaderCarousel ? 1.2 : 2,
+                        spaceBetween: 20,
                         navigation: {
                             enabled: false,
                         },
                     },
                 }}
                 navigation={true}
-                pagination={{ clickable: true }}
                 grabCursor={true}
             >
                 {selectedChildren.map((child, index) => (

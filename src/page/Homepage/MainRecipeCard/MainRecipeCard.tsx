@@ -27,7 +27,16 @@ export const MainRecipeCard = ({
     }, []);
 
     return (
-        <Card className={s.cardWrapper} style={{ backgroundColor: backgroundColor }}>
+        <Card
+            className={s.cardWrapper}
+            style={{
+                backgroundColor: backgroundColor,
+                color:
+                    backgroundColor === 'var(--color-green-800)'
+                        ? 'var(--color-blue-100'
+                        : 'var(--color-body)',
+            }}
+        >
             <div className={s.imageWrapper}>
                 <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
             </div>

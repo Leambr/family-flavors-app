@@ -1,14 +1,12 @@
 :root {
-    --grid-gutter-x-desktop: 16px;
-    --grid-gutter-x-mobile: 5px;
+    --grid-gutter-x-mobile: 1.6rem;
 }
 
 .layout-with-centered-content {
     display: grid;
-    grid-template-columns: 1fr 100% 1fr;
     grid-template-rows: auto;
+    grid-template-columns: 1fr 100% 1fr;
     grid-template-areas: 'left main right';
-    margin: 0 15px 0 15px;
 }
 
 .main-container {
@@ -19,10 +17,6 @@
 
 .main-container {
     grid-column: main;
-}
-
-.mb-40 {
-    margin-bottom: var(--space-40);
 }
 
 @media (min-width: 576px) {
