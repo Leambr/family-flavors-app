@@ -3,7 +3,7 @@
     flex-direction: column;
     display: flex;
     max-width: 500px;
-    padding: 26px;
+    padding: 18px;
     border-radius: 4px;
 }
 
@@ -54,6 +54,7 @@
 @media screen and (min-width: 720px) {
     .cardWrapper {
         border-radius: 0;
+        padding: 26px;
     }
 
     .image {
