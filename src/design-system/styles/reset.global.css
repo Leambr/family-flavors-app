@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
-    /* scrollbar-gutter: stable; */
 }
 
 html {
@@ -30,14 +29,15 @@ h1 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-normal);
     letter-spacing: var(--letter-spacing-title);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-28);
     margin: 0;
 }
 
 h2 {
     font-family: var(--font-family-default);
-    font-weight: var(--font-weight-semi-bold);
-    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-28);
+    padding-bottom: var(--space-24);
     margin: 0;
 }
 
@@ -55,4 +55,11 @@ ul {
 
 p {
     margin: 0;
+}
+
+@media screen and (min-width: 720px) {
+    h2 {
+        font-size: var(--font-size-28);
+        padding-bottom: var(--space-24);
+    }
 }

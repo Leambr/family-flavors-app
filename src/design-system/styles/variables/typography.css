@@ -5,8 +5,8 @@
 
 :root {
     --font-family-revonza: Revonza;
-    --font-family-graphie: 'graphie', sans-serif;
-    --font-family-default: var(--font-family-graphie);
+    --font-family-expo: 'expo-serif-pro', serif;
+    --font-family-default: var(--font-family-expo);
     --font-family-title: var(--font-family-revonza);
 
     --font-weight-light: 300;
@@ -17,10 +17,13 @@
 
     --font-size-xs: 1.4rem;
     --font-size-body: 1.6rem;
-    --font-size-m: 2rem;
-    --font-size-l: 2.8rem;
+    --font-size-20: 2rem;
+    --font-size-24: 2.4rem;
+    --font-size-28: 2.8rem;
     --font-size-xl: 3.6rem;
+    --font-size-24obile-title: 4.8rem;
 
+    --line-height-26: 1.625rem;
     --line-height-xs: 2.4rem;
     --line-height-body: 2.4rem;
     --line-height-m: 2.8rem;
@@ -28,11 +31,13 @@
     --line-height-xl: 4.4rem;
 
     --letter-spacing-title: 0.1rem;
+    --letter-spacing-subtitle: 0.2rem;
+    --letter-spacing-title-xl: 0.25rem;
 }
 
 @media (min-width: 768px) {
     :root {
-        --font-size-xl: 4.6rem;
+        --font-size-xl: 5rem;
         --line-height-xl: 5.6rem;
     }
 }

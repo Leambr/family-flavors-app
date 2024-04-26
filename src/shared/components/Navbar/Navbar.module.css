@@ -1,0 +1,22 @@
+.navbarContainer {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    height: 48px;
+    background: var(--color-green-900);
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px 16px;
+    width: 100%;
+    z-index: 9999;
+    transition: top 0.3s;
+}
+
+.menuRight {
+    display: flex;
+    gap: 30px;
+}
+
+.navbarHidden {
+    top: -48px;
+}
