@@ -34,6 +34,7 @@
 .recipeName {
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-semi-bold);
+    margin-bottom: var(--space-12);
 }
 
 .image {
@@ -63,9 +64,5 @@
 
     .dietType {
         padding-bottom: var(--space-8);
-    }
-
-    .recipeName {
-        margin-bottom: var(--space-12);
     }
 }

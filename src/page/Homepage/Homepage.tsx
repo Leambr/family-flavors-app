@@ -14,7 +14,7 @@ export const Homepage = () => {
     return (
         <>
             <div className="layout-with-centered-content">
-                <section className="main-container">
+                <section className="main-container mb-40 mb-72 mb-104">
                     <div className={s.landingContainer}>
                         <div className={s.landingTitleContainer}>
                             <h1 className={s.title}>Family Flavors</h1>
@@ -34,11 +34,27 @@ export const Homepage = () => {
                         </div>
                     </div>
                 </section>
-            </div>
 
-            <div className="layout-with-centered-content">
                 <section className="main-container mb-40 mb-72 mb-104">
-                    <h3>Nos recettes à base de riz</h3>
+                    <h2>Nos recettes à base de riz</h2>
+                    <Carousel isHeaderCarousel={true} maxNumberOfCards={8}>
+                        {images.map((image, index) => (
+                            <MainRecipeCard
+                                key={index}
+                                recipeName={'Tiramisu'}
+                                description={
+                                    'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
+                                }
+                                dietType={'Végétarien'}
+                                imageUrl={image}
+                                backgroundColor={colors[index % colors.length]}
+                            />
+                        ))}
+                    </Carousel>
+                </section>
+
+                <section className="main-container mb-40 mb-72 mb-104">
+                    <h2>Tartes et quiches</h2>
                     <Carousel isHeaderCarousel={true} maxNumberOfCards={8}>
                         {images.map((image, index) => (
                             <MainRecipeCard

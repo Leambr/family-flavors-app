@@ -9,10 +9,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
-    /* background: radial-gradient(50% 50% at 50% 50%, #3e484f 0%, #28333a 100%); */
-    /* transition: background-color 0.5s ease, background 0.5s ease; */
-
-    /* scrollbar-gutter: stable; */
 }
 
 html {
@@ -33,15 +29,15 @@ h1 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-normal);
     letter-spacing: var(--letter-spacing-title);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-28);
     margin: 0;
 }
 
 h2 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-normal);
-    letter-spacing: var(--letter-spacing-title);
-    font-size: var(--font-size-m);
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-24);
+    padding-bottom: var(--space-16);
     margin: 0;
 }
 
@@ -63,7 +59,7 @@ p {
 
 @media screen and (min-width: 720px) {
     h2 {
-        font-size: var(--font-size-xl);
-        letter-spacing: var(--letter-spacing-title-xl);
+        font-size: var(--font-size-28);
+        padding-bottom: var(--space-24);
     }
 }
