@@ -1,39 +1,35 @@
-import React, { useState } from 'react';
+import React, { PropsWithChildren } from 'react';
 
-import { RecipeCard } from '../../../components/RecipeCard/RecipeCard';
 import { Swiper, SwiperSlide } from '../../../components/Swiper/Swiper';
-import images from '../../../fixtures/images';
+import { CarouselProps } from '../../../resources/carousel/domain/carousel';
 
-interface CarouselProps {
-    isHeaderCarousel?: boolean;
-}
-
-export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const maxImage = 6;
-    const visibleImages = images.slice(0, maxImage);
-
-    const handleSlideChange = (swiper: any) => {
-        setActiveIndex(swiper.realIndex);
-    };
+export const Carousel = ({
+    children,
+    isHeaderCarousel,
+    maxNumberOfCards,
+}: PropsWithChildren<CarouselProps>) => {
+    const effectiveChildren = Array.isArray(children) ? children : [children];
+    const selectedChildren = maxNumberOfCards
+        ? effectiveChildren.slice(0, maxNumberOfCards)
+        : effectiveChildren;
 
     return (
         <>
             <Swiper
-                slidesPerView={2}
+                slidesPerView={1}
                 spaceBetween={10}
                 mousewheel={true}
                 breakpoints={{
                     1100: {
                         slidesPerView: 3,
-                        spaceBetween: 60,
+                        spaceBetween: 32,
                         navigation: {
                             enabled: true,
                         },
                     },
                     720: {
                         slidesPerView: 2,
-                        spaceBetween: 40,
+                        spaceBetween: 22,
                         navigation: {
                             enabled: false,
                         },
@@ -43,42 +39,15 @@ export const Carousel = ({ isHeaderCarousel }: CarouselProps) => {
                         spaceBetween: 10,
                         navigation: {
                             enabled: false,
-                            nextEl: '',
-                            prevEl: '',
                         },
                     },
                 }}
                 navigation={true}
-                effect="coverflow"
-                coverflowEffect={{
-                    rotate: 10,
-                    slideShadows: false,
-                    depth: 200,
-                    modifier: 1,
-                    stretch: 0,
-                }}
-                loop={true}
-                centeredSlides={true}
-                centeredSlidesBounds={true}
+                pagination={{ clickable: true }}
                 grabCursor={true}
-                on={{
-                    slideChange: handleSlideChange, // Écouter l'événement slideChange
-                }}
             >
-                {visibleImages.map((image, index) => (
-                    <SwiperSlide key={index}>
-                        <RecipeCard
-                            imageUrl={image}
-                            recipeName={'Pâtes à la carbonara'}
-                            description={
-                                'Delicious and flavorful recipe that will satisfy your taste buds. Yes my friend a good deal'
-                            }
-                            dietType={'Végétarien'}
-                            isHeaderCarousel={isHeaderCarousel}
-                            isActive={index === activeIndex}
-                            isDescription={true}
-                        />
-                    </SwiperSlide>
+                {selectedChildren.map((child, index) => (
+                    <SwiperSlide key={index}>{child}</SwiperSlide>
                 ))}
             </Swiper>
         </>

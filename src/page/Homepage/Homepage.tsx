@@ -3,6 +3,9 @@ import React from 'react';
 import pancakes from '../../assets/pancakes.jpg';
 import { ScrolldownDots } from '../../design-system/icons/ScrollDownDots';
 
+import images from '../../fixtures/images';
+import { Carousel } from '../../shared/components/Carousel/Carousel';
+
 import s from './Homepage.module.css';
 import { MainRecipeCard } from './MainRecipeCard/MainRecipeCard';
 
@@ -28,7 +31,7 @@ export const Homepage = () => {
 
             <section className="mb-40 mb-72 mb-104">
                 <h3>Nos recettes à base de riz</h3>
-                <MainRecipeCard
+                {/* <MainRecipeCard
                     recipeName={'Tiramisu'}
                     description={
                         'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
@@ -36,7 +39,21 @@ export const Homepage = () => {
                     dietType={'Végétarien'}
                     imageUrl={pancakes}
                     backgroundColor={'var( --color-beige)'}
-                />
+                /> */}
+                <Carousel isHeaderCarousel={true} maxNumberOfCards={6}>
+                    {images.map((image, index) => (
+                        <MainRecipeCard
+                            key={index}
+                            recipeName={'Tiramisu'}
+                            description={
+                                'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
+                            }
+                            dietType={'Végétarien'}
+                            imageUrl={image}
+                            backgroundColor={'var( --color-beige)'}
+                        />
+                    ))}
+                </Carousel>
             </section>
         </>
     );

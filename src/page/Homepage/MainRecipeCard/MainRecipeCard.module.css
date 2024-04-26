@@ -2,8 +2,7 @@
     cursor: pointer;
     flex-direction: column;
     display: flex;
-    max-width: 405px;
-    /* background-color: #f1f5d8; */
+    max-width: 500px;
     padding: 26px;
     border-radius: 4px;
 }
