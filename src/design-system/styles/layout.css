@@ -19,16 +19,8 @@
     grid-column: main;
 }
 
-.mb-40 {
-    margin-bottom: var(--space-40);
-}
-
 .mb-72 {
     margin-bottom: var(--space-72);
-}
-
-.mb-104 {
-    margin-bottom: var(--space-104);
 }
 
 @media (min-width: 576px) {
@@ -54,10 +46,18 @@
     .layout-with-centered-content {
         grid-template-columns: 1fr 1140px 1fr;
     }
+
+    .mb-104 {
+        margin-bottom: var(--space-104);
+    }
 }
 
 @media (min-width: 1400px) {
     .layout-with-centered-content {
         grid-template-columns: 1fr 1320px 1fr;
+    }
+
+    .mb-104 {
+        margin-bottom: var(--space-104);
     }
 }

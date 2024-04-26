@@ -15,7 +15,7 @@ export const Homepage = () => {
     return (
         <>
             <div className="layout-with-centered-content">
-                <section className="main-container mb-40 mb-72 mb-104">
+                <section className="main-container mb-72 mb-104">
                     <div className={s.landingContainer}>
                         <div className={s.landingTitleContainer}>
                             <h1 className={s.title}>Family Flavors</h1>
@@ -36,7 +36,7 @@ export const Homepage = () => {
                     </div>
                 </section>
 
-                <section className="main-container mb-40 mb-72 mb-104">
+                <section className="main-container mb-72 mb-104">
                     <h2>On adore cette saison</h2>
                     <Carousel isHeaderCarousel={true} maxNumberOfCards={3}>
                         {images.map((image, index) => (
@@ -54,7 +54,7 @@ export const Homepage = () => {
                     </Carousel>
                 </section>
 
-                <section className="main-container mb-40 mb-72 mb-104">
+                <section className="main-container mb-72 mb-104">
                     <h2>Tartes et quiches</h2>
                     <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
                         {images.map((image, index) => (
@@ -72,7 +72,7 @@ export const Homepage = () => {
                     </Carousel>
                 </section>
 
-                <section className="main-container mb-40 mb-72 mb-104">
+                <section className="main-container mb-72 mb-104">
                     <h2>Nos recettes à base de riz</h2>
                     <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
                         {images.map((image, index) => (
@@ -90,7 +90,7 @@ export const Homepage = () => {
                     </Carousel>
                 </section>
 
-                <section className="main-container mb-40 mb-72 mb-104">
+                <section className="main-container mb-72 mb-104">
                     <h2>Nos recettes à base de pâtes</h2>
                     <Carousel isHeaderCarousel={false} maxNumberOfCards={6}>
                         {images.map((image, index) => (
