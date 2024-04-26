@@ -7,9 +7,14 @@
     border-radius: 4px;
 }
 
+.cardWrapper:hover .image {
+    opacity: 0.7;
+}
+
 .imageWrapper {
     position: relative;
     flex-grow: 1;
+    background: #000;
 }
 
 .cardDescription {
@@ -44,6 +49,7 @@
     height: 184px;
     object-fit: cover;
     border-radius: 4px;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .recipeName {
