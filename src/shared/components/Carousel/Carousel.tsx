@@ -18,7 +18,9 @@ export const Carousel = ({
             <Swiper
                 slidesPerView={1.5}
                 spaceBetween={10}
-                mousewheel={true}
+                mousewheel={{
+                    forceToAxis: true,
+                }}
                 breakpoints={{
                     1100: {
                         slidesPerView: 3,
