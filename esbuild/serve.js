@@ -1,7 +1,9 @@
-import esbuild from 'esbuild';
-import { createBuildSettings } from './settings.js';
 import { htmlPlugin } from '@craftamap/esbuild-plugin-html';
+import esbuild from 'esbuild';
+
 import CssModulesPlugin from 'esbuild-css-modules-plugin';
+
+import { createBuildSettings } from './settings.js';
 
 const settings = createBuildSettings({
     sourcemap: true,
@@ -31,6 +33,7 @@ await ctx.watch();
 const { host, port } = await ctx.serve({
     port: 3000,
     servedir: 'public/',
+    fallback: `public/index.html`,
 });
 
 console.log(`Serving app at ${host}:${port}.`);
