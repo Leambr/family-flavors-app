@@ -19,7 +19,7 @@
     grid-column: main;
 }
 
-.main-container-cover {
+.main-container-cover-mobile {
     grid-column: left / right;
 }
 
@@ -32,11 +32,23 @@
         --grid-gutter-x-mobile: 3.2rem;
         grid-template-columns: 1fr 540px 1fr;
     }
+
+    .main-container-cover-mobile {
+        grid-column: main;
+        padding-right: var(--grid-gutter-x-mobile);
+        padding-left: var(--grid-gutter-x-mobile);
+    }
 }
 
 @media (min-width: 768px) {
     .layout-with-centered-content {
         grid-template-columns: 1fr 720px 1fr;
+    }
+
+    .main-container-cover-mobile {
+        grid-column: main;
+        padding-right: var(--grid-gutter-x-mobile);
+        padding-left: var(--grid-gutter-x-mobile);
     }
 }
 
@@ -44,11 +56,23 @@
     .layout-with-centered-content {
         grid-template-columns: 1fr 960px 1fr;
     }
+
+    .main-container-cover-mobile {
+        grid-column: main;
+        padding-right: var(--grid-gutter-x-mobile);
+        padding-left: var(--grid-gutter-x-mobile);
+    }
 }
 
 @media (min-width: 1200px) {
     .layout-with-centered-content {
         grid-template-columns: 1fr 1140px 1fr;
+    }
+
+    .main-container-cover-mobile {
+        grid-column: main;
+        padding-right: var(--grid-gutter-x-mobile);
+        padding-left: var(--grid-gutter-x-mobile);
     }
 
     .mb-104 {
@@ -59,6 +83,12 @@
 @media (min-width: 1400px) {
     .layout-with-centered-content {
         grid-template-columns: 1fr 1320px 1fr;
+    }
+
+    .main-container-cover-mobile {
+        grid-column: main;
+        padding-right: var(--grid-gutter-x-mobile);
+        padding-left: var(--grid-gutter-x-mobile);
     }
 
     .mb-104 {

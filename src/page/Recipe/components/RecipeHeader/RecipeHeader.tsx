@@ -14,7 +14,7 @@ export const RecipeHeader = ({
 }: Recipe) => {
     return (
         <>
-            <section className="main-container-cover mb-72 mb-104">
+            <section className="main-container-cover-mobile mb-72">
                 <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
             </section>
             <section className="main-container mb-72 mb-104">
@@ -24,7 +24,7 @@ export const RecipeHeader = ({
                     <p>Cuisson : {cookTime} min</p>
                     <p>{dietType}</p>
                 </div>
-                <p>{description}</p>
+                <p className={s.description}>{description}</p>
             </section>
         </>
     );
