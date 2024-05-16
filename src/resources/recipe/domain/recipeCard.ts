@@ -6,3 +6,8 @@ export interface RecipeCardProps {
     backgroundColor?: string;
     isLargeMobileCard?: boolean;
 }
+
+export interface Recipe extends RecipeCardProps {
+    prepTime: number;
+    cookTime: number;
+}

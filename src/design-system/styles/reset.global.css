@@ -41,6 +41,15 @@ h2 {
     margin: 0;
 }
 
+h3 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: var(--letter-spacing-title);
+    font-size: var(--font-size-36);
+    line-height: var(--space-40);
+    margin: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;

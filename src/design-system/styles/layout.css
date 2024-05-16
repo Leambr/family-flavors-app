@@ -19,6 +19,10 @@
     grid-column: main;
 }
 
+.main-container-cover {
+    grid-column: left / right;
+}
+
 .mb-72 {
     margin-bottom: var(--space-72);
 }
