@@ -1,5 +1,5 @@
 :root {
-    --grid-gutter-x-mobile: 1.6rem;
+    --grid-gutter-x-mobile: var(--space-16);
 }
 
 .layout-with-centered-content {
@@ -29,7 +29,7 @@
 
 @media (min-width: 576px) {
     .layout-with-centered-content {
-        --grid-gutter-x-mobile: 3.2rem;
+        --grid-gutter-x-mobile: var(--space-32);
         grid-template-columns: 1fr 540px 1fr;
     }
 

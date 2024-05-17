@@ -11,10 +11,6 @@ body {
     background-color: var(--color-background);
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body,
 input,
 button {
@@ -47,6 +43,14 @@ h3 {
     letter-spacing: var(--letter-spacing-title);
     font-size: var(--font-size-36);
     line-height: var(--space-40);
+    margin: 0;
+}
+
+h4 {
+    font-family: var(--font-family-default);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-24);
+    padding-bottom: var(--space-24);
     margin: 0;
 }
 

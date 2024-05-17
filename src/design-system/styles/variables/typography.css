@@ -15,29 +15,16 @@
     --font-weight-bold: 700;
     --font-weight-extra-bold: 800;
 
-    --font-size-xs: 1.4rem;
-    --font-size-body: 1.6rem;
-    --font-size-20: 2rem;
-    --font-size-24: 2.4rem;
-    --font-size-28: 2.8rem;
-    --font-size-36: 3.6rem;
-    --font-size-mobile-title: 4.8rem;
+    --font-size-xs: 0.875rem;
+    --font-size-body: 1rem;
+    --font-size-20: 1.25rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.75rem;
+    --font-size-36: 2.25rem;
+    --font-size-mobile-title: 3rem;
 
-    --line-height-26: 1.625rem;
-    --line-height-xs: 2.4rem;
-    --line-height-body: 2.4rem;
-    --line-height-m: 2.8rem;
-    --line-height-l: 3.6rem;
-    --line-height-xl: 4.4rem;
+    --line-height-body: 1.5rem;
 
     --letter-spacing-title: 0.1rem;
     --letter-spacing-subtitle: 0.2rem;
-    --letter-spacing-title-xl: 0.25rem;
-}
-
-@media (min-width: 768px) {
-    :root {
-        --font-size-xl: 5rem;
-        --line-height-xl: 5.6rem;
-    }
 }
