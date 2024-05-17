@@ -17,7 +17,7 @@ export const RecipeHeader = ({
             <section className="main-container-cover-mobile mb-72">
                 <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
             </section>
-            <section className="main-container mb-72 mb-104">
+            <section className="main-container mb-72">
                 <h3 className={s.recipeName}>{recipeName}</h3>
                 <div className={s.recipeTimes}>
                     <p>Préparation : {prepTime} min</p>
