@@ -10,4 +10,5 @@ export interface RecipeCardProps {
 export interface Recipe extends RecipeCardProps {
     prepTime: number;
     cookTime: number;
+    instruction: string;
 }

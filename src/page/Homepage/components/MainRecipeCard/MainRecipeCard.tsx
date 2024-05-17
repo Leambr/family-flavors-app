@@ -1,7 +1,7 @@
 import { Link } from '@mui/material';
 import React from 'react';
 
-import { RecipeCardProps } from '../../../../resources/recipe/domain/recipeCard';
+import { RecipeCardProps } from '../../../../resources/recipe/domain/recipe';
 import { Card } from '../../../../shared/components/Card/Card';
 
 import s from './MainRecipeCard.module.css';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Recipe } from '../../../../resources/recipe/domain/recipeCard';
+import { Recipe } from '../../../../resources/recipe/domain/recipe';
 
 import s from './RecipeHeader.module.css';
 
@@ -11,7 +11,7 @@ export const RecipeHeader = ({
     cookTime,
     dietType,
     description,
-}: Recipe) => {
+}: Omit<Recipe, 'instruction'>) => {
     return (
         <>
             <section className="main-container-cover-mobile mb-72">
