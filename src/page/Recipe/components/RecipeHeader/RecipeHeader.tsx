@@ -15,16 +15,18 @@ export const RecipeHeader = ({
     return (
         <>
             <section className="main-container-cover-mobile mb-72">
-                <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
-            </section>
-            <section className="main-container mb-72">
-                <h3 className={s.recipeName}>{recipeName}</h3>
-                <div className={s.recipeTimes}>
-                    <p>Préparation : {prepTime} min</p>
-                    <p>Cuisson : {cookTime} min</p>
-                    <p>{dietType}</p>
+                <div className={s.container}>
+                    <img src={imageUrl} className={s.image} alt="Pasta Recipe" />
+                    <section className="main-container-fluid-desktop">
+                        <h3 className={s.recipeName}>{recipeName}</h3>
+                        <div className={s.recipeTimes}>
+                            <p>Préparation : {prepTime} min</p>
+                            <p>Cuisson : {cookTime} min</p>
+                            <p>{dietType}</p>
+                        </div>
+                        <p className={s.description}>{description}</p>
+                    </section>
                 </div>
-                <p className={s.description}>{description}</p>
             </section>
         </>
     );
