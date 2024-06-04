@@ -19,16 +19,18 @@ export const Recipe = () => {
 
     return (
         <div className="layout-with-centered-content">
-            <RecipeHeader
-                prepTime={0}
-                cookTime={0}
-                recipeName={'Quiche à la tomate avec thon et basilic'}
-                description={
-                    'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu  Un excellent tiramisu  Un excellent tiramisu  Un excellent tiramisu   '
-                }
-                dietType={'Végétarien'}
-                imageUrl={quiche}
-            />
+            <section className="main-container-cover-mobile mb-72">
+                <RecipeHeader
+                    prepTime={0}
+                    cookTime={0}
+                    recipeName={'Quiche à la tomate avec thon et basilic'}
+                    description={
+                        'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu  Un excellent tiramisu  Un excellent tiramisu  Un excellent tiramisu   '
+                    }
+                    dietType={'Végétarien'}
+                    imageUrl={quiche}
+                />
+            </section>
 
             <section className="main-container mb-72 mb-104">
                 <h4>Ingrédients</h4>
