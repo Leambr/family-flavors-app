@@ -54,6 +54,14 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-body);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
 a {
     color: inherit;
     text-decoration: none;

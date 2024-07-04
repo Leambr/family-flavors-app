@@ -10,6 +10,8 @@
 .recipeName {
     margin-bottom: var(--space-32);
     line-height: var(--space-48);
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .recipeTimes {
@@ -17,6 +19,10 @@
     gap: 16px;
     margin-bottom: var(--space-20);
     font-weight: bold;
+}
+
+.container {
+    margin-bottom: var(--space-72);
 }
 
 @media screen and (min-width: 720px) {
@@ -31,5 +37,6 @@
         align-items: center;
         padding-top: 48px;
         height: 100vh;
+        margin-bottom: 0;
     }
 }

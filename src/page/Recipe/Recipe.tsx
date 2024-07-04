@@ -4,6 +4,7 @@ import quiche from '../../assets/quiche.jpg';
 
 import { IngredientsList } from './components/IngredientsList/IngredientsList';
 
+import { PeopleServing } from './components/PeopleServing/PeopleServing';
 import { RecipeHeader } from './components/RecipeHeader/RecipeHeader';
 import { RecipeInstruction } from './components/RecipeInstruction/RecipeInstruction';
 
@@ -19,7 +20,7 @@ export const Recipe = () => {
 
     return (
         <div className="layout-with-centered-content">
-            <section className="main-container-cover-mobile mb-72">
+            <section className="main-container-cover-mobile">
                 <RecipeHeader
                     prepTime={0}
                     cookTime={0}
@@ -30,6 +31,11 @@ export const Recipe = () => {
                     dietType={'Végétarien'}
                     imageUrl={quiche}
                 />
+            </section>
+
+            <section className="main-container mb-20">
+                <h5>Portions</h5>
+                <PeopleServing />
             </section>
 
             <section className="main-container mb-72 mb-104">

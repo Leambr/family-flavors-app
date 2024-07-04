@@ -24,6 +24,10 @@
     grid-column: left / right;
 }
 
+.mb-20 {
+    margin-bottom: var(--space-20);
+}
+
 .mb-72 {
     margin-bottom: var(--space-72);
 }

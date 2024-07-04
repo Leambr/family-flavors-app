@@ -22,7 +22,7 @@ export const RecipeHeader = ({
                     <p>Cuisson : {cookTime} min</p>
                     <p>{dietType}</p>
                 </div>
-                <p className={s.description}>{description}</p>
+                <p>{description}</p>
             </section>
         </div>
     );
