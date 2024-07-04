@@ -1,48 +1,12 @@
-import cx from 'classnames';
-import React, { useEffect, useState } from 'react';
+import { useMediaQuery } from '@mui/material';
+import { Theme } from '@mui/system';
+import React from 'react';
 
-import { BurgerMenu } from '../../../design-system/icons/BurgerMenu';
-import { Logo } from '../../../design-system/icons/Logo';
-import { Search } from '../../../design-system/icons/Search';
-
-import s from './Navbar.module.css';
+import { NavbarDesktop } from './NavbarDesktop/NavbarDesktop';
+import { NavbarMobile } from './NavbarMobile/NavbarMobile';
 
 export const Navbar = () => {
-    const [isVisible, setIsVisible] = useState(false);
+    const isMobile = useMediaQuery((theme: Theme) => theme.breakpoints.down('md'));
 
-    const handleScroll = () => {
-        const currentScrollPosition = window.scrollY;
-
-        if (currentScrollPosition > 20) {
-            setIsVisible(true);
-        } else {
-            setIsVisible(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    });
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    });
-
-    return (
-        <div className={isVisible ? s.navbarContainer : cx(s.navbarContainer, s.navbarHidden)}>
-            <div>
-                <Logo color="var(--color-blue-100)" />
-            </div>
-            <div className={s.menuRight}>
-                <Search color="var(--color-blue-100)" />
-                <BurgerMenu color="var(--color-blue-100)" />
-            </div>
-        </div>
-    );
+    return <>{isMobile ? <NavbarMobile /> : <NavbarDesktop />}</>;
 };
