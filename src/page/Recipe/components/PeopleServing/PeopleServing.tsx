@@ -3,7 +3,7 @@ import { Box, IconButton, Typography } from '@mui/material';
 import React, { useState } from 'react';
 
 export const PeopleServing = () => {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     return (
         <Box
@@ -16,7 +16,7 @@ export const PeopleServing = () => {
         >
             <IconButton
                 onClick={() => {
-                    setCount(Math.max(count - 1, 0));
+                    setCount(Math.max(count - 1, 1));
                 }}
             >
                 <Remove fontSize="small" />
@@ -31,7 +31,7 @@ export const PeopleServing = () => {
                 }}
             >
                 <Typography>{count}</Typography>
-                {count === 0 ? (
+                {count === 1 ? (
                     <Typography>personne</Typography>
                 ) : (
                     <Typography>personnes</Typography>
