@@ -6,20 +6,18 @@ import { Ingredient } from '../../../../resources/ingredient/domain/ingredient';
 
 export const IngredientsList = ({ ingredientName }: Ingredient) => {
     return (
-        <>
-            <div>
-                <FormGroup>
-                    <FormControlLabel
-                        control={
-                            <Checkbox
-                                icon={<CircleOutlined />}
-                                checkedIcon={<CheckCircleOutlineOutlined />}
-                            />
-                        }
-                        label={ingredientName}
-                    />
-                </FormGroup>
-            </div>
-        </>
+        <div>
+            <FormGroup>
+                <FormControlLabel
+                    control={
+                        <Checkbox
+                            icon={<CircleOutlined />}
+                            checkedIcon={<CheckCircleOutlineOutlined />}
+                        />
+                    }
+                    label={ingredientName}
+                />
+            </FormGroup>
+        </div>
     );
 };

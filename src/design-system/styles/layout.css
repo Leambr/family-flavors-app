@@ -46,7 +46,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
     .layout-with-centered-content {
         grid-template-columns: 1fr 720px 1fr;
     }
