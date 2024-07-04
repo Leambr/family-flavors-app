@@ -16,7 +16,3 @@
     display: flex;
     gap: 30px;
 }
-
-.navbarHidden {
-    top: -48px;
-}
