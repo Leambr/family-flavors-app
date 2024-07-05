@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <title>Family Flavors</title>
@@ -6,6 +6,11 @@
             name="viewport"
             content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1, minimum-scale=1"
         />
+        <script>
+            window.env = {
+                FAMILY_FLAVORS_API_URL: '<%= process.env.FAMILY_FLAVORS_API_URL %>',
+            };
+        </script>
     </head>
     <body>
         <div id="root"></div>
