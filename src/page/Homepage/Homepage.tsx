@@ -6,7 +6,7 @@ import images from '../../fixtures/images';
 import { Carousel } from '../../shared/components/Carousel/Carousel';
 
 import { BasicRecipeCard } from './components/BasicRecipeCard/BasicRecipeCard';
-import { MainRecipeCard } from './components/MainRecipeCard/MainRecipeCard';
+import { MainRecipeCardCarousel } from './components/MainRecipeCardCarousel/MainRecipeCardCarousel';
 import s from './Homepage.module.css';
 
 export const Homepage = () => {
@@ -38,20 +38,7 @@ export const Homepage = () => {
 
                 <section className="main-container mb-72 mb-104">
                     <h2>On adore cette saison</h2>
-                    <Carousel isHeaderCarousel={true} maxNumberOfCards={3}>
-                        {images.map((image, index) => (
-                            <MainRecipeCard
-                                key={index}
-                                recipeName={'Tiramisu'}
-                                description={
-                                    'Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu Un excellent tiramisu '
-                                }
-                                dietType={'Végétarien'}
-                                imageUrl={image}
-                                backgroundColor={colors[index % colors.length]}
-                            />
-                        ))}
-                    </Carousel>
+                    <MainRecipeCardCarousel />
                 </section>
 
                 <section className="main-container mb-72 mb-104">
